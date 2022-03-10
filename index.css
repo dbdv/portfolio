@@ -33,7 +33,7 @@ body {
 }
 
 .main-style > h1 {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .header {
@@ -43,113 +43,213 @@ body {
 }
 
 .about > p {
-    margin: 10px 20px;
+  margin: 10px 20px;
 }
 
 .about > p > span {
-    font-weight: bold;
-    font-size: 22px;
-    color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--secondary-color);
 }
 
 .skills {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-.sec-projects{
-    flex-direction: column;
+.sec-projects {
+  flex-direction: column;
 }
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects > div {
-    flex-direction: column;
-    width: 250px;
-    min-height: 500px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: var(--bg-color);
-    margin: 5px;
-    color: var(--text-color);
+  flex-direction: column;
+  width: 250px;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--bg-color);
+  margin: 5px;
+  color: var(--text-color);
 }
 
 .projects > div > a > img {
-    width: 240px;
-    height: 240px;
-    border-radius: 10px;
-    margin: 5px;
-    object-fit: cover;
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+  margin: 5px;
+  object-fit: cover;
 }
 
 .projects > div > a > h3 {
-    padding: 5px;
-    color: var(--secondary-color);
+  padding: 5px;
+  color: var(--secondary-color);
 }
 
 .projects > div > a {
-    text-decoration: none;
-    color: var(--text-color);
-
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-
 .projects > div > a:visited {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .projects > div > p {
-    padding: 5px;
+  padding: 5px;
 }
 
 .icons {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .icons > div {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-    font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
 }
 
 .buttons {
-    display: flex;
+  display: flex;
 }
 
 .button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    width: 140px;
-    height: 40px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    background: var(--bg-color);
-    color: var(--text-color);
-    text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  width: 140px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .button:hover {
-    transition: .5s;
-    cursor: pointer;
-    background: var(--text-color);
-    font-size: 20px;
-    color: var(--bg-color);
+  transition: 0.5s;
+  cursor: pointer;
+  background: var(--text-color);
+  font-size: 20px;
+  color: var(--bg-color);
 }
 
 .social-icon {
-    width: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  .main-style {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 17px;
+    margin: 5px 3px;
+  }
+
+  .header {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .about > p {
+    margin: 5px;
+  }
+
+  .about > p > span {
+    font-size: 20px;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  .icons > div > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sec-projects {
+    width: 90%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects > div {
+    flex-direction: column;
+    width: 350px;
+    min-height: 300px;
+    align-items: center;
+    margin: 5px;
+  }
+  .projects > div > a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects > div > a > img {
+    width: 98%;
+    height: 190px;
+    border-radius: 10px;
+    margin: 5px 0;
+    object-fit: cover;
+  }
+
+  .projects > div > a > h3 {
+    padding: 2px;
+  }
+  .projects > div > p {
+    text-align: center;
+    padding: 3px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 100px;
     height: 30px;
-    margin: 0 10px;
+    margin: 5px;
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
 }
