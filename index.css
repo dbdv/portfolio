@@ -92,7 +92,7 @@ header {
   color: var(--text-color);
 }
 
-.projects > div > a > img {
+/* .projects > div > a > img  */.project-img{
   width: 240px;
   height: 240px;
   border-radius: 10px;
@@ -135,7 +135,7 @@ header {
   display: flex;
 }
 
-.button {
+.button, .repo-link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,6 +163,17 @@ header {
   width: 30px;
   height: 30px;
   margin: 0 10px;
+}
+
+.repo-link {
+  width: 60px;
+  justify-content: left;
+  align-items: center;
+}
+
+.repo-link-img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 500px) {
@@ -266,4 +277,5 @@ header {
     height: 20px;
     margin: 0 5px;
   }
+
 }
