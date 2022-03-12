@@ -99,9 +99,19 @@ header {
   object-fit: cover;
 }
 
+.project-img:hover {
+  width: 250px;
+  height: 250px;
+  margin: 0;
+}
+
 .projects > div > a > h3 {
   padding: 5px;
   color: var(--secondary-color);
+}
+
+.projects > div > a > h3:hover {
+  text-decoration: underline;
 }
 
 .projects > div > a {
@@ -170,6 +180,10 @@ header {
   width: 60px;
   justify-content: left;
   align-items: center;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
 }
 
 .repo-link-img {
