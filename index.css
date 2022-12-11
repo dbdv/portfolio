@@ -92,9 +92,9 @@ header {
   display: flex;
   flex-direction: column;
   width: 250px;
-  min-height: 100%;
+  height: 500px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 10px;
   background: var(--bg-color);
   margin: 5px;
@@ -138,6 +138,8 @@ header {
 .projects > div > p {
   padding: 5px;
   opacity: 0.9;
+  text-align: left;
+  margin-left: 5px;
 }
 
 .icons {
@@ -194,7 +196,7 @@ header {
 .repo-link {
   width: 60px;
   justify-content: left;
-  align-items: center;
+  justify-self: flex-end !important;
 }
 
 .repo-link:hover {
